@@ -3,4 +3,5 @@ Using color code from [material-ui.com/#/customization/colors](http://www.materi
 
 # To do
 - Change color of menu item's selected state
-- SidebarMenu.js's SelectableList may need to be a separated component
+- Refactor component style code for serverside rendering.
+- May be we need drawer docked on none mobile viewport
