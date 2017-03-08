@@ -68,7 +68,7 @@ class SidebarMenu extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      open: props.open ? props.open : true
+      open: props.open ? props.open : false
     }
   }
 
