@@ -2,3 +2,24 @@ body {
   padding: 0;
   margin: 0;
 }
+
+//desktop breakpoint
+$xs: 321px;
+
+.mobile-menu {
+  display: block;
+}
+.desktop-menu {
+  display: none;
+}
+
+//none mobile style
+@media (min-width: $xs) {
+  /* header style */
+  .desktop-menu {
+    display: block;
+  }
+  .mobile-menu {
+    display: none !important;
+  }
+}
