@@ -8,6 +8,7 @@ import Avatar from 'material-ui/Avatar'
 import FontIcon from 'material-ui/FontIcon'
 import {Card, CardHeader} from 'material-ui/Card'
 import {List, ListItem, makeSelectable} from 'material-ui/List'
+import {Link} from 'react-router'
 
 let SelectableList = makeSelectable(List)
 function wrapState(ComposedComponent) {
@@ -61,6 +62,35 @@ const UserInfo = () => (
 )
 
 class SidebarMenu extends Component {
+  state = {
+    menuItems: [
+      {label: 'Orders', icon: 'shopping_cart', link: '/orders', value: 1},
+      {label: 'Shipments', icon: 'local_shipping', link: '/shipments', value: 2},
+      {label: 'Returns', icon: 'keyboard_return', link: '/returns', value: 3},
+      {label: 'Reports', icon: 'view_quilt', link: '/reports', value: 4},
+      {label: 'Account', icon: 'settings', link: '/account', value: 5}
+    ]
+  }
+  render(){
+    return (
+      <SelectableList defaultValue={1} style={{paddingTop: 0}} selectedItemStyle={{backgroundColor: lime600, color: 'black'}}>
+        {
+          this.state.menuItems.map((menuItem) => (
+            <ListItem 
+              key={menuItem.link}
+              primaryText={menuItem.label} 
+              style={{color: grey500}} 
+              leftIcon={<FontIcon className="material-icons" color={grey500}>{menuItem.icon}</FontIcon>}
+              value={menuItem.value}
+              containerElement={<Link to={menuItem.link} />}
+             />
+          ))
+        }
+      </SelectableList>
+    )
+  }
+}
+class Sidebar extends Component {
   static propTypes = {
     open: PropTypes.bool
   }
@@ -100,16 +130,10 @@ class SidebarMenu extends Component {
           showMenuIconButton={false}
         />
         <UserInfo />
-        <SelectableList defaultValue={1} style={{paddingTop: 0}} selectedItemStyle={{backgroundColor: lime600, color: 'black'}}>
-          <ListItem primaryText="Orders" style={{color: grey500}} leftIcon={<FontIcon className="material-icons" color={grey500}>shopping_cart</FontIcon>} value={1}/>
-          <ListItem primaryText="Shipments" style={{color: grey500}} leftIcon={<FontIcon className="material-icons" color={grey500}>local_shipping</FontIcon>} value={2}/>
-          <ListItem primaryText="Returns" style={{color: grey500}} leftIcon={<FontIcon className="material-icons" color={grey500}>keyboard_return</FontIcon>} value={3}/>
-          <ListItem primaryText="Reports" style={{color: grey500}} leftIcon={<FontIcon className="material-icons" color={grey500}>view_quilt</FontIcon>} value={4}/>
-          <ListItem primaryText="Account" style={{color: grey500}} leftIcon={<FontIcon className="material-icons" color={grey500}>settings</FontIcon>} value={5}/>
-        </SelectableList>   
+        <SidebarMenu />
       </Drawer>
     )    
   }
 }
 
-export default muiThemeable()(SidebarMenu)
+export default muiThemeable()(Sidebar)
