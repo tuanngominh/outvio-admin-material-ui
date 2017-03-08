@@ -1,7 +1,10 @@
 import React, {Component, PropTypes} from 'react'
 import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
+import AppBar from 'material-ui/AppBar'
+import {blueGrey800} from 'material-ui/styles/colors'
 import muiThemeable from 'material-ui/styles/muiThemeable'
+import logo from '../logo.svg'
 
 class SidebarMenu extends Component {
   static propTypes = {
@@ -32,6 +35,11 @@ class SidebarMenu extends Component {
   render () {
     return (
       <Drawer open={this.state.open} docked={false} onRequestChange={this.handleOnRequestChange}>
+        <AppBar 
+          style={{backgroundColor: blueGrey800}} 
+          title={<img src={logo} alt='Outvio logo' style={{height: '1.5em', marginTop: 14}} />}
+          showMenuIconButton={false}
+        />
         <MenuItem>Menu Item</MenuItem>
         <MenuItem>Menu Item 2</MenuItem>
       </Drawer>
