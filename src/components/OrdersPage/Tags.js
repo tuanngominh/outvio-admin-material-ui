@@ -1,6 +1,5 @@
 import React from 'react'
 import Chip from 'material-ui/Chip'
-import {teal700} from 'material-ui/styles/colors'
 
 export default class Tags extends React.Component {
 

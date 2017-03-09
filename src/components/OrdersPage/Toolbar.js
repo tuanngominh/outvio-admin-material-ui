@@ -4,9 +4,7 @@ import IconButton from 'material-ui/IconButton';
 import FontIcon from 'material-ui/FontIcon';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert'
 import MenuItem from 'material-ui/MenuItem';
-import DropDownMenu from 'material-ui/DropDownMenu';
-import RaisedButton from 'material-ui/RaisedButton';
-import {Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle} from 'material-ui/Toolbar';
+import {Toolbar, ToolbarGroup} from 'material-ui/Toolbar';
 import Tags from './Tags'
 
 export default class ToolbarExamplesSimple extends React.Component {
