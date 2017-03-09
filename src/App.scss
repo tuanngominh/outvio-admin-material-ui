@@ -1,26 +1,7 @@
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #E0F2F1;//material color: teal50
-}
+@import "stylesheets/_variables"
+@import "stylesheets/_reset"
+@import "stylesheets/_header"
+@import "stylesheets/_toolbar"
 
-//desktop breakpoint
-$xs: 321px;
 
-.mobile-menu {
-  display: block;
-}
-.desktop-menu {
-  display: none;
-}
 
-//none mobile style
-@media (min-width: $xs) {
-  /* header style */
-  .desktop-menu {
-    display: block;
-  }
-  .mobile-menu {
-    display: none !important;
-  }
-}

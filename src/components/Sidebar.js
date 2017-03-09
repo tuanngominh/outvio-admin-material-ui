@@ -50,7 +50,7 @@ const UserInfo = () => (
     <CardHeader
       titleStyle={{color: 'white'}}
       subtitleStyle={{color: 'white'}}
-      title="John Smith"
+      title="Juan Borras"
       subtitle="Breastfeeling.com "
       avatar={<Avatar size={35}>JB</Avatar>}
       actAsExpander={true}

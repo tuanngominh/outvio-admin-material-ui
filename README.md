@@ -3,7 +3,12 @@
 # Style
 Using color code from [material-ui.com/#/customization/colors](http://www.material-ui.com/#/customization/colors)
 
+The style customization (e.g. color, padding) will be defined in the custom theme `src/muiTheme.js`. The one which can't put in custom theme, they will be define as inline style in component or in SASS code (for media query style)
+
 # To do
-- Change color of menu item's selected state
+- Drawer:
+    - Click menu item will auto close the drawer
+    - Change color of menu item's selected state
+    - May be we need drawer docked on none mobile viewport
 - Refactor component style code for serverside rendering.
-- May be we need drawer docked on none mobile viewport
+- Move custom color code to theme object

@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 
-import Header from './Header'
-import Sidebar from './Sidebar'
+import Header from './components/Header'
+import Sidebar from './components/Sidebar'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import muiTheme from './muiTheme'
 
 // Needed for onTouchTap
 import injectTapEventPlugin from 'react-tap-event-plugin'
 injectTapEventPlugin()
 
-import '../App.css'
+import './App.css'
 
 class App extends Component {
   state = {
@@ -23,7 +24,7 @@ class App extends Component {
 
   render() {
     return (
-      <MuiThemeProvider>
+      <MuiThemeProvider muiTheme={muiTheme}>
         <div>
           <Header onLeftIconButtonTouchTap={this.handleOpenSidebarMenu}/>
           <Sidebar open={this.state.openSidebarMenu}/>

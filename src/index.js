@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import {Router, Route, IndexRoute} from 'react-router'
 import history from './history'
 
-import App from './components/App'
+import App from './App'
 import OrdersPage from './components/OrdersPage'
 import ShipmentsPage from './components/ShipmentsPage'
 import ReturnsPage from './components/ReturnsPage'
