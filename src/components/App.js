@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import Header from './Header'
-import SidebarMenu from './SidebarMenu'
+import Sidebar from './Sidebar'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 // Needed for onTouchTap
@@ -26,7 +26,7 @@ class App extends Component {
       <MuiThemeProvider>
         <div>
           <Header onLeftIconButtonTouchTap={this.handleOpenSidebarMenu}/>
-          <SidebarMenu open={this.state.openSidebarMenu}/>
+          <Sidebar open={this.state.openSidebarMenu}/>
           <div className="content">
             {this.props.children}
           </div>          
