@@ -10,5 +10,9 @@ The style customization (e.g. color, padding) will be defined in the custom them
     - Click menu item will auto close the drawer
     - Change color of menu item's selected state
     - May be we need drawer docked on none mobile viewport
-- Refactor component style code for serverside rendering.
+- Refactor component style code for serverside rendering. Options:
+    - https://github.com/FormidableLabs/radium
+    - https://www.npmjs.com/package/styled-jsx
+- Order Items
+    - Only reduce column padding in mobile viewport
 - Move custom color code to theme object

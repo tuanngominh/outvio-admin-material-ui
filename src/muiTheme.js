@@ -11,6 +11,9 @@ const muiTheme = getMuiTheme({
     deleteIconColor: teal400,
     backgroundColor: teal700,
     textColor: 'white'
+  },
+  tableRowColumn: {
+    spacing: 4
   }
 })
 
