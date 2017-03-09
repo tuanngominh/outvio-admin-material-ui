@@ -1,5 +1,5 @@
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
-import {teal700, teal400} from 'material-ui/styles/colors'
+import {teal700, teal400, amber800} from 'material-ui/styles/colors'
 
 const muiTheme = getMuiTheme({
   toolbar: {
@@ -14,6 +14,9 @@ const muiTheme = getMuiTheme({
   },
   tableRowColumn: {
     spacing: 4
+  },
+  floatingActionButton: {
+    color: amber800
   }
 })
 

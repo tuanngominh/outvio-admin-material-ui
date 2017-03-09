@@ -15,4 +15,6 @@ The style customization (e.g. color, padding) will be defined in the custom them
     - https://www.npmjs.com/package/styled-jsx
 - Order Items
     - Only reduce column padding in mobile viewport
+- Add Order Floating Button:
+    - Increase size and right, bottom margin on desktop viewport
 - Move custom color code to theme object

@@ -1,6 +1,5 @@
 import React from 'react'
-import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table'
-import FontIcon from 'material-ui/FontIcon'
+import {Table, TableBody, TableRow, TableRowColumn} from 'material-ui/Table'
 import {getSymbolFromCurrency} from 'currency-symbol-map'
 import Moment from 'moment'
 import {green600, yellow600} from 'material-ui/styles/colors'
@@ -24,7 +23,7 @@ const Item = (props) => {
       }}>{stateToIconMap[props.status].iconName}</i>
   }
   return (
-    <TableRow {...props}>
+    <TableRow>
        {props.children[0]}
       <TableRowColumn>
         <div>
