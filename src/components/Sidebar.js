@@ -3,7 +3,7 @@ import Drawer from 'material-ui/Drawer'
 import AppBar from 'material-ui/AppBar'
 import {blueGrey800, blueGrey500, teal700, lime600, grey500} from 'material-ui/styles/colors'
 import muiThemeable from 'material-ui/styles/muiThemeable'
-import logo from '../logo.svg'
+// import logo from '../logo.svg'
 import Avatar from 'material-ui/Avatar'
 import FontIcon from 'material-ui/FontIcon'
 import {Card, CardHeader} from 'material-ui/Card'
@@ -126,7 +126,7 @@ class Sidebar extends Component {
       >
         <AppBar 
           style={{backgroundColor: blueGrey800}} 
-          title={<img src={logo} alt='Outvio logo' style={{height: '1.5em', marginTop: 14}} />}
+          // title={<img src={logo} alt='Outvio logo' style={{height: '1.5em', marginTop: 14}} />}
           showMenuIconButton={false}
         />
         <UserInfo />

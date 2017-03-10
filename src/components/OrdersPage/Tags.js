@@ -23,11 +23,6 @@ export default class Tags extends React.Component {
   }
 
   handleRequestDelete = (key) => {
-    if (key === 3) {
-      alert('Why would you want to delete React?! :)')
-      return
-    }
-
     this.chipData = this.state.chipData
     const chipToDelete = this.chipData.map((chip) => chip.key).indexOf(key)
     this.chipData.splice(chipToDelete, 1)

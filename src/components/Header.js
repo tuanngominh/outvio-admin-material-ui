@@ -7,7 +7,7 @@ import IconMenu from 'material-ui/IconMenu'
 import MenuItem from 'material-ui/MenuItem'
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert'
 import FontIcon from 'material-ui/FontIcon'
-import logo from '../logo.svg'
+// import logo from '../logo.svg'
 import {blueGrey800} from 'material-ui/styles/colors'
 
 const style = {
@@ -45,7 +45,7 @@ const Header = (props) => {
   return (
     <AppBar
       style={{backgroundColor: blueGrey800}}
-      title={<img src={logo} alt='Outvio logo' style={{height: '1.5em', marginTop: 14}}  className='desktop-menu'/>}
+      // title={<img src={logo} alt='Outvio logo' style={{height: '1.5em', marginTop: 14}}  className='desktop-menu'/>}
       onLeftIconButtonTouchTap={props.onLeftIconButtonTouchTap}
       iconElementRight={<IconButtons />}
     />

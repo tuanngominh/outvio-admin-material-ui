@@ -9,9 +9,6 @@ import muiTheme from './muiTheme'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 injectTapEventPlugin()
 
-import './App.css'
-import '../node_modules/flexboxgrid/dist/flexboxgrid.min.css'
-
 class App extends Component {
   state = {
     openSidebarMenu: false

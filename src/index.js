@@ -1,25 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {Router, Route, IndexRoute} from 'react-router'
-import history from './history'
+import AppRoutes from './components/AppRoutes'
 
-import App from './App'
-import OrdersPage from './components/OrdersPage'
-import ShipmentsPage from './components/ShipmentsPage'
-import ReturnsPage from './components/ReturnsPage'
-import ReportsPage from './components/ReportsPage'
-import AccountPage from './components/AccountPage'
+import './App.css'
+import '../node_modules/flexboxgrid/dist/flexboxgrid.min.css'
 
 ReactDOM.render(
-  <Router history={history}>
-    <Route path='/' component={App}>
-      <IndexRoute component={OrdersPage} />
-      <Route path='/orders' component={OrdersPage} />
-      <Route path='/shipments' component={ShipmentsPage} />
-      <Route path='/returns' component={ReturnsPage} />
-      <Route path='/reports' component={ReportsPage} />
-      <Route path='/account' component={AccountPage} />
-    </Route>
-  </Router>,
+  <AppRoutes />,
   document.getElementById('root')
 );
